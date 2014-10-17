@@ -13,7 +13,7 @@ Authentication.prototype.authenticate = function (req, res, next) {
 };
 
 
-module.exports = function authenticationRouteFactory (injector) {
+module.exports = function authenticationHelperFactory (injector) {
   var authentication = injector.instantiate(Authentication);
   return authentication;
 };
