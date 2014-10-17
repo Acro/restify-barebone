@@ -1,10 +1,9 @@
 /**
  * @constructor
  */
-var Authentication = function (injector, logger, /* config.api.name */ api_name) {
+var Authentication = function (injector, logger) {
 	this.$injector = injector;
 	this.$logger = logger;
-  this.$api_name = api_name;
 };
 
 
