@@ -9,16 +9,16 @@ var Main = function (injector, logger, /* config.api.name */ api_name) {
 
 
 Main.prototype.greeting = function (req, res, next) {
-  var username = req.params.username;
-  
-  var response = {
-    "message": "Hello " + username,
-    "api_name": this.$api_name
-  };
+	var username = req.params.username;
 
-  res.send(response);
+	var response = {
+		"message": "Hello " + username,
+		"api_name": this.$api_name
+	};
 
-  next();
+	res.send(response);
+
+	next();
 };
 
 
