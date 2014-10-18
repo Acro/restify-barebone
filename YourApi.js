@@ -28,7 +28,7 @@ YourApi.prototype.setupRoutes_ = function () {
 
 YourApi.prototype.startServer_ = function () {
 	var serverStarted = function() {
-		console.log('%s listening at %s', this.$server.name, this.$server.url);
+		this.$logger('%s listening at %s', this.$server.name, this.$server.url);
 	};
 
 	this.$server.listen(process.env.PORT || 8080, serverStarted.bind(this));
