@@ -1,8 +1,7 @@
 /**
  * @constructor
  */
-var Main = function (injector, logger, /* config.api.name */ api_name) {
-	this.$injector = injector;
+var Main = function (logger, /* config.api.name */ api_name) {
 	this.$logger = logger;
 	this.$api_name = api_name;
 };

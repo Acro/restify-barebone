@@ -1,8 +1,7 @@
 /**
  * @constructor
  */
-var Authentication = function (injector, logger) {
-	this.$injector = injector;
+var Authentication = function (logger) {
 	this.$logger = logger;
 };
 

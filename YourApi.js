@@ -1,8 +1,7 @@
 /**
  * @constructor
  */
-var YourApi = function (injector, server, logger, main_route, auth_helper) {
-	this.$injector = injector;
+var YourApi = function (server, logger, main_route, auth_helper) {
 	this.$server = server;
 	this.$logger = logger;
 	this.$main_route = main_route;
